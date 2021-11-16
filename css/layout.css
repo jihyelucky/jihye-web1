@@ -1,0 +1,72 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap');
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),
+    url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');
+}
+
+/* common */
+body,html{margin:0;width:100%;height:100%;position:relative;margin:0 auto}*{box-sizing: border-box;margin:0;padding:0;list-style:none;text-decoration:none!important;font-family:'Montserrat' ,'Noto Sans KR';font-weight:400;font-size:16px;outline:0;-webkit-text-size-adjust:none}ul>li>a{text-decoration:none}a{color:inherit;text-decoration:none}a:hover{text-decoration:none!important}a:active,a:checked,a:focus,a:hover,a:visited{text-decoration:none!important}ul>li>a:active,ul>li>a:checked,ul>li>a:focus,ul>li>a:hover,ul>li>a:visited{text-decoration:none}table{border-collapse:collapse}.blind{position:absolute!important;visibility:hidden!important;top:0!important;left:0!important;height:0!important;width:0!important;font-size:0!important;line-height:0!important;overflow:hidden!important}fieldset{border:none}legend{display:none}caption{display:none}p,span,strong{letter-spacing:-.5px}i{display:inline-block}em{font-style:normal;letter-spacing:-1px}input{box-sizing:border-box;border:1px solid #ddd;background-color:#fff;border-radius:0;-webkit-appearance:none;-moz-appearance:none;appearance:none}input[type=text]::-ms-clear{display:none}button{box-sizing:border-box;border:0;background-color:transparent;cursor:pointer}textarea{box-sizing:border-box;resize:none}select{-webkit-border-radius:0;-webkit-appearance:none;-moz-appearance:none;-webkit-appearance:none;appearance:none;box-sizing:border-box;cursor:pointer}select::-ms-expand{display:none}.clear{clear:both;content:'';display:block}
+.clear::after{display: block;content: ''; clear: both;}
+.logo{position: absolute;left: 10px;width: 120px;top: 10px;max-width: 100%;z-index: 99;}
+@media screen and (max-width:1024px) {
+
+}
+
+@media screen and (max-width:767px) {
+.logo{width: 100px;}
+}
+
+@media screen and (max-width:480px) {
+
+}
