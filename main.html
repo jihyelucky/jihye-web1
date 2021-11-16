@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>Jihye's </title>
+  <meta property="og:image" content="image/icon02.png" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery-animate-css-rotate-scale.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <link rel="icon" href="image/icon.png" type="image/x-icon" />
+</head>
+
+<body>
+  <img src="image/logo.png" alt="" class="logo"onclick="location.href='main.html'">
+  <div class="visual">
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide link_box">
+          <div class="tx_box">
+            <h4>Publishing</h4>
+            <p>My Body</p>
+            <a href="http://avanmall.solutionhosting.co.kr/mybody/main/list_btn.html" target="_blank">Click</a>
+          </div>
+          <img src="image/mybody.jpg" class="mybody01" alt="">
+          <img src="image/mybody2.jpg" class="mybody02" alt="">
+        </div>
+        <div class="swiper-slide link_box">
+          <div class="tx_box tx_box02">
+            <h4>Publishing</h4> <br>
+            <div class="shared">
+              <div class="">
+                <p>My Body Promotion Page</p>
+                <a href="http://avanmall.solutionhosting.co.kr/mybody/promotion/index.html" target="_blank">Click</a>
+              </div>
+              <div class="">
+                <p>My Body Manage Page</p>
+                <a href="http://avanmall.solutionhosting.co.kr/mybody/store/index.html" target="_blank">Click</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide link_box">
+          <div class="tx_box">
+            <h4>Publishing</h4>
+            <p>에코삼성병원</p>
+            <a href="https://www.ecosamsung.com/" target="_blank">Click</a>
+          </div>
+          <img src="image/eco02.jpg" class="mybody01" alt="">
+        </div>
+        <div class="swiper-slide link_box">
+          <div class="tx_box">
+            <h4>Publishing</h4>
+            <p>Wide Mobile</p>
+            <a href="http://avanmall.solutionhosting.co.kr/widemobile3/main/list_btn.html" target="_blank">Click</a>
+          </div>
+          <!-- <img src="image/wide02.png" class="wide02" alt=""> -->
+          <img src="image/wide03.jpg" class="mybody01" alt="">
+          <img src="image/wide04.jpg" class="mybody02" alt="">
+        </div>
+        <div class="swiper-slide link_box">
+          <div class="tx_box tx_box02">
+            <h4>Publishing</h4> <br>
+            <div class="shared">
+              <div class="">
+                <p>Siliconmitus PC</p>
+                <a href="http://avanmall.solutionhosting.co.kr/siliconmitus_2/main/" target="_blank">Click</a>
+              </div>
+              <div class="">
+                <p>Siliconmitus Mobile</p>
+                <a href="http://avanmall.solutionhosting.co.kr/siliconmitus_2/m/" target="_blank">Click</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide link_box">
+          <div class="tx_box">
+            <h4>Publishing</h4>
+            <p>보니머니</p>
+            <a href="http://avanmall.solutionhosting.co.kr/3n/m/list_btn.html" target="_blank">Click</a>
+          </div>
+          <img src="image/3n.jpg" class="mybody01" alt="">
+          <img src="image/3n02.jpg" class="mybody02" alt="">
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="box_btn">
+        <span class="slide_count">01 / 06</span>
+        <button class="slide_pause"></button>
+      </div>
+    </div>
+    <div id="arrow" class="demo">
+      <p>SCROLL</p>
+      <div class="line">
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <div class="cursor"></div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      direction: "horizontal",
+      slidesPerView: 1,
+      effect: "cube",
+      grabCursor: true,
+      cubeEffect: {
+        shadow: true,
+        slideShadows: true,
+        shadowOffset: 20,
+        shadowScale: 0.94,
+      },
+      mousewheel: true,
+      autoplay: {
+        delay: 2400,
+        disableOnInteraction: false,
+      },
+      speed: 2000,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+
+
+    swiper.on('transitionEnd', function() {
+      document.querySelector(".slide_count").innerHTML = "0" + (swiper.realIndex + 1) + "/ 06";
+    });
+
+
+    let btninx = 0;
+    $(".slide_pause").click(function() {
+      if (btninx == 0) {
+        swiper.autoplay.stop();
+        $(".slide_pause").addClass('play');
+        btninx = 1;
+        console.log(btninx);
+      } else if (btninx == 1) {
+        swiper.autoplay.start();
+        $(".slide_pause").removeClass('play');
+        btninx = 0;
+        console.log(btninx);
+      }
+    });
+
+    let mouseCursor = document.querySelector(".cursor");
+    //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+    window.addEventListener("scroll", cursor);
+    window.addEventListener("mousemove", cursor);
+    //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+    function cursor(e) {
+      mouseCursor.style.left = e.pageX + "px";
+      mouseCursor.style.top = e.pageY - scrollY + "px";
+    }
+  </script>
+</body>
+
+</html>

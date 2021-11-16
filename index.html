@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0">
+  <title>Jihye's </title>
+  <meta property="og:image" content="image/icon02.png" />
+  <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/jquery-animate-css-rotate-scale.js"></script>
+  <script src="js/swiper-bundle.min.js"></script>
+  <link rel="icon" href="image/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css" />
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="header">
+      <ul class="menubar">
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <div class="m_menu">
+        <div class="gnb_wrap">
+          <ul class="depth01">
+            <li><a href="#Home" class="gnb_tit">HOME</a></li>
+            <li><a href="#About" class="gnb_tit">ABOUT</a></li>
+            <li><a href="#Work" class="gnb_tit">WORK</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="loader">
+      <div class="img_box">
+        <img src="image/load.png" alt="" class="load_img">
+        <div class="line01">
+        </div>
+        <div class="line02">
+        </div>
+      </div>
+    </div>
+    <img src="image/logo2.png" alt="" class="logo" onclick="location.href='index.html'">
+    <div id="fullpage">
+      <section class="section section1">
+        <div class="inner">
+          <div class="tx_box">
+            <h4>HELLOW, </h4> <br>
+            <h4>IT'S ME </h4>
+          </div>
+        </div>
+        <div class="top">
+        </div>
+        <img src="image/jihye02.png" alt="" class="jihye">
+        <div id="arrow02" class="arrow_02">
+          <span></span><span></span><span></span>
+        </div>
+      </section>
+      <section class="section section2">
+        <div class="inner">
+          <div class="clear">
+            <div class="img_box">
+              <img src="image/pro.jpg" alt="">
+            </div>
+            <div class="tx_box">
+              <h4>이지혜 <span>프로필 편집 <img src="image/setting.png" alt=""> </span> </h4>
+              <h5>1996.11.27</h5>
+              <p>동아방송예술대학 콘텐츠학부</p>
+              <div class="box">
+                <strong>웹 퍼블리셔</strong>
+                <em>기획자, 디자이너, 개발자 모두의 입장에서 바라보도록 노력하며 협업에 힘쓰는 퍼블리셔가 되겠습니다.
+                </em>
+              </div>
+            </div>
+          </div>
+          <div class="box02">
+            <ul class="clear">
+              <li>
+                <strong>전화</strong>
+                <em>82-10-2305-8364</em>
+              </li>
+              <li>
+                <strong>이메일</strong>
+                <em>jizzyang96@naver.com</em>
+              </li>
+              <li>
+                <strong>자격사항</strong>
+                <em>GTQ Photoshop 1급</em>
+                <em>ITQ Exel ,PPT, MSword</em>
+              </li>
+              <li>
+                <strong>어학능력</strong>
+                <em>JLPT N1</em>
+              </li>
+              <li>
+                <strong>툴 활용</strong>
+                <em>html</em>
+                <em>css</em>
+                <em>jquery</em>
+                <em>javascript</em>
+              </li>
+              <li>
+                <strong>그 외</strong>
+                <em>Premium Pro</em>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </section>
+      <section class="section section3">
+        <div class="line_box">
+          <div class="line01">
+          </div>
+          <div class="line02">
+          </div>
+        </div>
+        <div class="tx_box">
+          <h4 onclick="location.href='main.html'">GO PUBLISHING</h4><br> <br>
+          <h4 onclick="window.open('https://jizzyang.modoo.at/')">GO DESIGN</h4>
+        </div>
+      </section>
+    </div>
+
+    <div class="cursor"></div>
+  </div>
+
+
+
+  <!-- Initialize Swiper -->
+  <script>
+    let mouseCursor = document.querySelector(".cursor");
+    //window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+    window.addEventListener("scroll", cursor);
+    window.addEventListener("mousemove", cursor);
+    //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+    function cursor(e) {
+      mouseCursor.style.left = e.pageX + "px";
+      mouseCursor.style.top = e.pageY - scrollY + "px";
+    }
+  </script>
+</body>
+
+</html>
