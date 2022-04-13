@@ -84,6 +84,7 @@ $(document).on('ready', function() {
     setTimeout(function() {
       $('.m_menu').removeClass('on');
     }, 300);
+    menu_bt = 0;
   });
 
   // menu open
