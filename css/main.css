@@ -69,8 +69,7 @@ body {
 .link_box:nth-child(7){background:#55e3e5 }
 .link_box:nth-child(8){background:#55e3e5 }
 html {	--color-texta: purple;	--color-textb: #fff;}
-*{cursor: none !important;}
-.cursor{width:3rem;height:3rem;border:2px solid var(--color-texta);border-radius:50%;position:absolute;z-index:1000;transform:translate(-50%,-50%);pointer-events:none;transition:all .3s ease;transition-property:background,transform;transform-origin:100% 100%;backdrop-filter:sepia(20%);background-size:cover}
+
 @-webkit-keyframes sdb07 {
   0% {
     opacity: 0;
