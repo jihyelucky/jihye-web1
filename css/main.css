@@ -58,16 +58,12 @@ body {
 .mybody02{position: absolute;right: 20%;top: 50%;width: 10%;transform: translateY(-50%);}
 .link_box:nth-child(2){background:url('../image/mybody03.jpg')no-repeat;background-size: cover; }
 .link_box:nth-child(3){background:url('../image/eco01.jpg')no-repeat;background-size: cover; }
-.link_box:nth-child(4){background:url('../image/wide.jpg')no-repeat center center;background-size: cover; }
-.wide02{position: absolute;left: 10%;bottom: 0;max-width: 100%;width: 28%;}
-.link_box:nth-child(4) .mybody01{left: 15%; width: 20%}
-.link_box:nth-child(4) .mybody02{right: 15%; width: 20%}
-.link_box:nth-child(5){background:url('../image/sili.jpg')no-repeat center center;background-size: cover; }
-.link_box:nth-child(6){background:#ffba00 }
-.link_box:nth-child(6) .mybody01{left: 15%; width: 18%}
-.link_box:nth-child(6) .mybody02{ right: 15%;width: 18%}
+.link_box:nth-child(4){background:url('../image/sili.jpg')no-repeat center center;background-size: cover; }
+.link_box:nth-child(5){background:#ffba00 }
+.link_box:nth-child(5) .mybody01{left: 15%; width: 18%}
+.link_box:nth-child(5) .mybody02{ right: 15%;width: 18%}
+.link_box:nth-child(6){background:#55e3e5 }
 .link_box:nth-child(7){background:#55e3e5 }
-.link_box:nth-child(8){background:#55e3e5 }
 html {	--color-texta: purple;	--color-textb: #fff;}
 
 @-webkit-keyframes sdb07 {
